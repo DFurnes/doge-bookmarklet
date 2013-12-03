@@ -176,11 +176,21 @@
 
   }
 
-  // much javascripts. make it happen:
-  for(var i = 0; i < (Math.random() * 15 + 2); i++) {
-    muchDoge();
-  }
 
+  // set typography
   setProperTypeface();
+
+
+  // preload image
+  var doge_image = new Image();
+  doge_image.src = "http://dfurnes.com/doge-bookmarklet/doge.gif";
+
+  doge_image.onload = function(){
+    // much javascripts. make it happen:
+    for(var i = 0; i < (Math.random() * 15 + 2); i++) {
+      muchDoge();
+    }
+
+  };
 
 })();
