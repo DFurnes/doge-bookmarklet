@@ -138,7 +138,7 @@
 
 
     var doge = document.createElement("img");
-    doge.src = "http://ds-neue.dev/doge-sm.gif";
+    doge.src = "http://dfurnes.com/doge-bookmarklet/doge.gif";
     doge.style.position = "absolute";
     doge.style.top = "0";
     doge.style.left = "0";
@@ -182,6 +182,5 @@
   }
 
   setProperTypeface();
-
 
 })();
