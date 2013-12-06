@@ -104,7 +104,7 @@
     var sortedArray = sortObject(weightedObj);
 
     var topTen = [];
-    for(var k = 0; k < (10 || sortedArray.length); k++) {
+    for(var k = 0; k < Math.min(sortedArray.length, 10); k++) {
       topTen.push(sortedArray[k].key);
     }
 
